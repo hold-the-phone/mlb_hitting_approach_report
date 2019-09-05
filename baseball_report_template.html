@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<p><strong>Player Name:</strong> {{ player_nm }}</p>
+	<p><strong>Opposing Pitcher Handedness:</strong> {{ handedness }}</p>
+	<p><strong>Pitch Type:</strong> {{ pitch_type }}</p>
+
+
+	<left>
+	  <h3>Summary Statistics for Batting Situation</h3>
+	</left>
+
+	<div class="row">
+		{{ tbl1 }}
+		{{ tbl2 }}
+	</div>
+
+	<left>
+		<h3>Heatmaps of Batting Tendencies by Plate Location</h3>
+	</left>
+
+	<left>
+		<div class="row">
+		  	<img src={{ swing_incidence }} class="images">
+		  	<img src={{ exit_velo }} class="images">
+		</div>
+	</left>
+
+	<left>
+		<div class="row">
+    		<img src={{ hit_incidence }} class="images">
+    		<img src={{ out_incidence }} class="images">
+		</div>
+	</left>
+
+</body>
+</html>

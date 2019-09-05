@@ -1,0 +1,61 @@
+/* Default font settings.
+   The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+html { font-size:100.01%; }
+body {
+  font-size: 99.0%;
+  color: black;
+  background: #fff;
+  font-family: "Courier New";
+}
+
+
+ /* Table style 
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+table {
+  max-width: 75%;
+  border-collapse: collapse;
+  margin: 1em;
+  font-size: 75%;
+  text-align: left;
+}
+*/
+th {
+  text-align: left;
+  height: auto;
+  column-width: auto;
+  max-width: auto;
+}
+
+
+
+/* Image stuff
+-------------------------------------------------------------- */
+
+ /* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+.images
+{
+width: 48%; 
+display: inline-block;
+float:left;
+margin: 0px;
+padding: 5px;
+white-space:nowrap;
+}
